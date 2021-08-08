@@ -1,0 +1,22 @@
+.address__list {
+  font-style: normal;
+}
+.address__text {
+  color: $fon-color;
+}
+
+.address__links {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color $function-time;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
