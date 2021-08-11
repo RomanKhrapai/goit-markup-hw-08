@@ -65,9 +65,9 @@
 }
 
 .menu__item {
-  &:not(:last-child) {
-    margin-bottom: 32px;
-  }
+  // &:not(:last-child) {
+  margin-bottom: 32px;
+  // }
 }
 .menu__link {
   font-size: 40px;
