@@ -1,5 +1,11 @@
 .address__list {
   font-style: normal;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    & {
+      margin-bottom: 0px;
+    }
+  }
 }
 .address__text {
   color: $fon-color;
@@ -17,6 +23,11 @@
 
 .address__item {
   &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
+      & {
+        margin-bottom: 9px;
+      }
+    }
   }
 }

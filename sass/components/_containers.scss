@@ -1,25 +1,61 @@
 .container {
-  width: 1200px;
+  width: 100vw;
+  max-width: 480px;
 
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    & {
+      width: 768px;
+      max-width: none;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      width: 1200px;
+    }
+  }
 }
 .header {
-  height: 80px;
+  height: 60px;
 
-  display: flex;
-
-  border-bottom: 1px solid #ececec;
-}
-.container--flex {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
+  border-bottom: 1px solid #ececec;
+  @media screen and (min-width: 768px) {
+    & {
+      height: 80px;
+    }
+  }
+}
+
+.container--flex {
+  @media screen and (min-width: 768px) {
+    & {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    & {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
+}
+.section--none {
+  @media screen and (max-width: 1199px) {
+    & {
+      display: none;
+    }
+  }
 }
 .section--no-top {
   padding-top: 0;
@@ -28,16 +64,23 @@
   background-color: #f5f4fa;
 }
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   text-align: center;
 
   font-weight: 700;
-  font-size: 36px;
+
   line-height: 1.17;
+  font-size: 28px;
   letter-spacing: 0.03em;
 
   color: $title-text-color;
+  @media screen and (min-width: 1200px) {
+    & {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+  }
 }
 .section__title--invisible {
   position: absolute;
@@ -52,12 +95,46 @@
   padding-top: 60px;
 }
 .container--footer {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    & {
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    & {
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
+
 .box--social-networks {
-  margin-left: 70px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    & {
+      margin-bottom: 0;
+      margin-left: 165px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      margin-left: 70px;
+    }
+  }
 }
 .box--mail {
-  margin-left: 93px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    & {
+      text-align: center;
+      margin-top: 60px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      margin-left: 93px;
+    }
+  }
 }

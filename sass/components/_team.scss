@@ -1,9 +1,21 @@
 .team {
+  margin-left: -$interval-box;
+  margin-top: -$interval-box;
   display: flex;
+  flex-wrap: wrap;
 }
 .team__item {
-  &:not(:last-child) {
-    margin-right: $interval-box;
+  margin-left: $interval-box;
+  margin-top: $interval-box;
+  @media screen and (min-width: 768px) {
+    & {
+      width: calc((100% - 30px * 2) / 2);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      width: calc((100% - 30px * 4) / 4);
+    }
   }
 }
 .team__foto {
@@ -30,7 +42,7 @@
 
 .team__name {
   margin-bottom: 10px;
-
+  font-size: inherit;
   font-weight: 500;
   color: $title-text-color;
 }

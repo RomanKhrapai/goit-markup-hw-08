@@ -1,0 +1,36 @@
+.contacts {
+  //display: flex;
+  display: none;
+}
+.contacts__link {
+  padding: 32px 0;
+
+  transition: color $function-time;
+}
+.contacts__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.contacts__link {
+  //display: flex;
+  align-items: center;
+
+  color: $primary-text-color;
+  fill: $primary-text-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.contacts__icon {
+  margin-right: 10px;
+
+  transition: fill $function-time;
+
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: $accent-color;
+  }
+}

@@ -1,9 +1,19 @@
 .feature {
-  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+  @media screen and (min-width: 768px) {
+    & {
+      display: flex;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    & {
+      flex-wrap: wrap;
+    }
+  }
 }
 .feature__box {
   height: 120px;
-  width: 270px;
 
   margin-bottom: $interval-box;
 
@@ -20,13 +30,23 @@
   width: 70px;
 }
 .feature__item {
-  &:not(:last-child) {
-    margin-right: $interval-box;
+  margin-left: $interval-box;
+  margin-top: $interval-box;
+  @media screen and (min-width: 768px) {
+    & {
+      width: calc((100% - 60px) / 2);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      width: calc((100% - 30px * 4) / 4);
+    }
   }
 }
 .feature__title {
   margin-bottom: 10px;
 
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
