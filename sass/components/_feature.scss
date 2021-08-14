@@ -1,15 +1,12 @@
 .feature {
-  margin-left: -30px;
   margin-top: -30px;
   @media screen and (min-width: 768px) {
-    & {
-      display: flex;
-    }
+    margin-left: -30px;
+
+    display: flex;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    & {
-      flex-wrap: wrap;
-    }
+    flex-wrap: wrap;
   }
 }
 .feature__box {
@@ -30,17 +27,14 @@
   width: 70px;
 }
 .feature__item {
-  margin-left: $interval-box;
   margin-top: $interval-box;
   @media screen and (min-width: 768px) {
-    & {
-      width: calc((100% - 60px) / 2);
-    }
+    margin-left: $interval-box;
+
+    width: calc((100% - 60px) / 2);
   }
   @media screen and (min-width: 1200px) {
-    & {
-      width: calc((100% - 30px * 4) / 4);
-    }
+    width: calc((100% - 30px * 4) / 4);
   }
 }
 .feature__title {

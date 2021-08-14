@@ -1,8 +1,10 @@
 .works {
-  margin-left: -$interval-box;
   margin-top: -$interval-box;
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -$interval-box;
+  }
 }
 
 .works__img {
@@ -12,17 +14,13 @@
 }
 
 .works__item {
-  margin-left: $interval-box;
   margin-top: $interval-box;
   @media screen and (min-width: 768px) {
-    & {
-      width: calc((100% - 30px * 2) / 2);
-    }
+    width: calc((100% - 30px * 2) / 2);
+    margin-left: $interval-box;
   }
   @media screen and (min-width: 1200px) {
-    & {
-      width: calc((100% - 30px * 3) / 3);
-    }
+    width: calc((100% - 30px * 3) / 3);
   }
 }
 .works__link {
@@ -54,9 +52,7 @@
   padding: 24px;
 
   @media screen and (min-width: 768px) {
-    & {
-      display: flex;
-    }
+    display: flex;
   }
 
   justify-content: center;

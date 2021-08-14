@@ -16,10 +16,9 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  @media screen and (max-height: 500px) {
-    & {
+  @media screen and (max-height: 500px) 
+  {
       margin-top: 170px;
-    }
   }
   transform: translate(-50%, -50%);
   transition: transform $function-time;
@@ -27,10 +26,9 @@
   max-width: 450px;
 
   @media screen and (min-width: 1200px) {
-    & {
+
       width: 528px;
       max-width: none;
-    }
   }
   padding: 40px;
 
@@ -181,10 +179,9 @@
   letter-spacing: 0.025em;
   fill: $fon-color;
   cursor: pointer;
-  @media screen and (min-width: 1200px) {
-    & {
+  @media screen and (min-width: 1200px) 
+  {
       font-size: 14px;
-    }
   }
 }
 .check {
@@ -200,10 +197,9 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.025em;
-  @media screen and (min-width: 1200px) {
-    & {
+  @media screen and (min-width: 1200px) 
+  {
       font-size: 14px;
-    }
   }
 }
 

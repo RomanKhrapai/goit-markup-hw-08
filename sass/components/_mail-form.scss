@@ -3,9 +3,7 @@
   align-items: center;
   flex-direction: column;
   @media screen and (min-width: 1200px) {
-    & {
-      flex-direction: row;
-    }
+    flex-direction: row;
   }
 }
 .mail__text {
@@ -18,14 +16,10 @@
 
   color: $fon-color;
   @media screen and (min-width: 768px) {
-    & {
-      display: flex;
-    }
+    display: flex;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    & {
-      justify-content: center;
-    }
+    justify-content: center;
   }
 }
 .mail__edit {
@@ -54,18 +48,14 @@
     color: rgba(255, 255, 255, 0.6);
   }
   @media screen and (min-width: 768px) {
-    & {
-      width: 450px;
-      margin-bottom: 0;
-      margin-top: 0;
-      display: flex;
-    }
+    width: 450px;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: flex;
   }
   @media screen and (min-width: 1200px) {
-    & {
-      width: 358px;
-      margin-right: 12px;
-    }
+    width: 358px;
+    margin-right: 12px;
   }
 
   &:hover,
@@ -101,9 +91,7 @@
   transition: color $function-time, background-color $function-time;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    & {
-      margin-top: 20px;
-    }
+    margin-top: 20px;
   }
 
   &:focus,

@@ -1,21 +1,19 @@
 .team {
-  margin-left: -$interval-box;
   margin-top: -$interval-box;
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    margin-left: -$interval-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .team__item {
-  margin-left: $interval-box;
   margin-top: $interval-box;
   @media screen and (min-width: 768px) {
-    & {
-      width: calc((100% - 30px * 2) / 2);
-    }
+    margin-left: $interval-box;
+    width: calc((100% - 30px * 2) / 2);
   }
   @media screen and (min-width: 1200px) {
-    & {
-      width: calc((100% - 30px * 4) / 4);
-    }
+    width: calc((100% - 30px * 4) / 4);
   }
 }
 .team__foto {
